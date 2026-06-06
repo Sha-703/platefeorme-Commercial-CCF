@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1780759278896",
+    "createdAt": "2026-06-06T15:21:18.896Z",
+    "email": "othnielpululu345@gmail.com",
+    "password": "$2a$10$LHNQ/i8AJGTEqE92.MIm5Orm/H56oqNnj5scMW4GrdApKznh.DF96",
+    "name": "othniel pululu",
+    "role": "STUDENT"
+  },
+  {
+    "id": "1780760999840",
+    "createdAt": "2026-06-06T15:49:59.840Z",
+    "email": "othnielpululu@gmail.com",
+    "password": "$2a$10$NVAM.cSDeAcgqTGbMY11SOt8Xo0ObwRUm5nMNQroNj3ukfLKJ1mYy",
+    "name": "pululu",
+    "role": "TEACHER"
+  }
+]

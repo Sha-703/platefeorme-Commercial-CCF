@@ -1,0 +1,106 @@
+[
+  {"id": "o1-1a", "text": "L'objectivité et l'impersonnalité", "isCorrect": true, "order": 1, "questionId": "q1-1"},
+  {"id": "o1-1b", "text": "La courtoisie", "isCorrect": false, "order": 2, "questionId": "q1-1"},
+  {"id": "o1-1c", "text": "La prudence", "isCorrect": false, "order": 3, "questionId": "q1-1"},
+  {"id": "o1-1d", "text": "La responsabilité", "isCorrect": false, "order": 4, "questionId": "q1-1"},
+
+  {"id": "o1-2a", "text": "Parce qu'il est grammaticalement incorrect", "isCorrect": false, "order": 1, "questionId": "q1-2"},
+  {"id": "o1-2b", "text": "Parce qu'il dilue la responsabilité", "isCorrect": true, "order": 2, "questionId": "q1-2"},
+  {"id": "o1-2c", "text": "Parce qu'il est trop familier", "isCorrect": false, "order": 3, "questionId": "q1-2"},
+  {"id": "o1-2d", "text": "Parce qu'il est réservé à la correspondance privée", "isCorrect": false, "order": 4, "questionId": "q1-2"},
+
+  {"id": "o1-3a", "text": "« Je refuse votre demande. »", "isCorrect": false, "order": 1, "questionId": "q1-3"},
+  {"id": "o1-3b", "text": "« Votre demande est rejetée. »", "isCorrect": false, "order": 2, "questionId": "q1-3"},
+  {"id": "o1-3c", "text": "« Il ne m'est pas possible de donner une suite favorable à votre requête. »", "isCorrect": true, "order": 3, "questionId": "q1-3"},
+  {"id": "o1-3d", "text": "« Non, c'est impossible. »", "isCorrect": false, "order": 4, "questionId": "q1-3"},
+
+  {"id": "o1-4a", "text": "« Les agents arrivent en retard, on l'a constaté. »", "isCorrect": false, "order": 1, "questionId": "q1-4"},
+  {"id": "o1-4b", "text": "« Il a été constaté que les agents arrivent en retard. »", "isCorrect": true, "order": 2, "questionId": "q1-4"},
+  {"id": "o1-4c", "text": "« Nous avons constaté le retard des agents. »", "isCorrect": false, "order": 3, "questionId": "q1-4"},
+  {"id": "o1-4d", "text": "« Quelqu'un a constaté que les agents arrivent en retard. »", "isCorrect": false, "order": 4, "questionId": "q1-4"},
+
+  {"id": "o1-5a", "text": "L'indicatif", "isCorrect": false, "order": 1, "questionId": "q1-5"},
+  {"id": "o1-5b", "text": "Le subjonctif", "isCorrect": false, "order": 2, "questionId": "q1-5"},
+  {"id": "o1-5c", "text": "Le conditionnel", "isCorrect": true, "order": 3, "questionId": "q1-5"},
+  {"id": "o1-5d", "text": "L'impératif", "isCorrect": false, "order": 4, "questionId": "q1-5"},
+
+  {"id": "o1-6a", "text": "Verbe + Sujet + Complément", "isCorrect": false, "order": 1, "questionId": "q1-6"},
+  {"id": "o1-6b", "text": "Sujet + Verbe + Complément", "isCorrect": true, "order": 2, "questionId": "q1-6"},
+  {"id": "o1-6c", "text": "Complément + Verbe + Sujet", "isCorrect": false, "order": 3, "questionId": "q1-6"},
+  {"id": "o1-6d", "text": "Sujet + Complément + Verbe", "isCorrect": false, "order": 4, "questionId": "q1-6"},
+
+  {"id": "o1-7a", "text": "« Je vous annonce que... »", "isCorrect": false, "order": 1, "questionId": "q1-7"},
+  {"id": "o1-7b", "text": "« J'ai l'honneur de vous informer... »", "isCorrect": true, "order": 2, "questionId": "q1-7"},
+  {"id": "o1-7c", "text": "« Je voulais vous dire que... »", "isCorrect": false, "order": 3, "questionId": "q1-7"},
+  {"id": "o1-7d", "text": "« Sachez que... »", "isCorrect": false, "order": 4, "questionId": "q1-7"},
+
+  {"id": "o2-1a", "text": "En bas à droite", "isCorrect": false, "order": 1, "questionId": "q2-1"},
+  {"id": "o2-1b", "text": "Au centre", "isCorrect": false, "order": 2, "questionId": "q2-1"},
+  {"id": "o2-1c", "text": "En haut à gauche", "isCorrect": true, "order": 3, "questionId": "q2-1"},
+  {"id": "o2-1d", "text": "En haut à droite", "isCorrect": false, "order": 4, "questionId": "q2-1"},
+
+  {"id": "o2-2a", "text": "Le résumé du contenu de la lettre", "isCorrect": false, "order": 1, "questionId": "q2-2"},
+  {"id": "o2-2b", "text": "L'appellation de l'auteur et l'adresse du destinataire exprimant la hiérarchie", "isCorrect": true, "order": 2, "questionId": "q2-2"},
+  {"id": "o2-2c", "text": "La date et le lieu", "isCorrect": false, "order": 3, "questionId": "q2-2"},
+  {"id": "o2-2d", "text": "Les références légales", "isCorrect": false, "order": 4, "questionId": "q2-2"},
+
+  {"id": "o2-3a", "text": "Objet, Références, Signature", "isCorrect": false, "order": 1, "questionId": "q2-3"},
+  {"id": "o2-3b", "text": "Introduction, Développement, Conclusion", "isCorrect": true, "order": 2, "questionId": "q2-3"},
+  {"id": "o2-3c", "text": "Timbre, Vedette, Corps", "isCorrect": false, "order": 3, "questionId": "q2-3"},
+  {"id": "o2-3d", "text": "Salutation, Exposé, Formule de politesse", "isCorrect": false, "order": 4, "questionId": "q2-3"},
+
+  {"id": "o2-4a", "text": "La note est réservée aux communications internes sans protocole", "isCorrect": true, "order": 1, "questionId": "q2-4"},
+  {"id": "o2-4b", "text": "La note a une valeur juridique supérieure", "isCorrect": false, "order": 2, "questionId": "q2-4"},
+  {"id": "o2-4c", "text": "La lettre de service est plus courte", "isCorrect": false, "order": 3, "questionId": "q2-4"},
+  {"id": "o2-4d", "text": "Il n'y a aucune différence", "isCorrect": false, "order": 4, "questionId": "q2-4"},
+
+  {"id": "o2-5a", "text": "Informer le public", "isCorrect": false, "order": 1, "questionId": "q2-5"},
+  {"id": "o2-5b", "text": "Faire circuler une pièce ou un dossier le long de la ligne hiérarchique", "isCorrect": true, "order": 2, "questionId": "q2-5"},
+  {"id": "o2-5c", "text": "Donner un ordre de mission", "isCorrect": false, "order": 3, "questionId": "q2-5"},
+  {"id": "o2-5d", "text": "Convoquer une réunion", "isCorrect": false, "order": 4, "questionId": "q2-5"},
+
+  {"id": "o2-6a", "text": "« Pour information personnelle »", "isCorrect": false, "order": 1, "questionId": "q2-6"},
+  {"id": "o2-6b", "text": "« Pour attribution »", "isCorrect": true, "order": 2, "questionId": "q2-6"},
+  {"id": "o2-6c", "text": "« Pour archivage définitif »", "isCorrect": false, "order": 3, "questionId": "q2-6"},
+  {"id": "o2-6d", "text": "« Pour destruction »", "isCorrect": false, "order": 4, "questionId": "q2-6"},
+
+  {"id": "o2-7a", "text": "Oui, toujours", "isCorrect": false, "order": 1, "questionId": "q2-7"},
+  {"id": "o2-7b", "text": "Oui, mais seulement pour les supérieurs", "isCorrect": false, "order": 2, "questionId": "q2-7"},
+  {"id": "o2-7c", "text": "Non, elle exclut toute formule d'appel ou de politesse finale", "isCorrect": true, "order": 3, "questionId": "q2-7"},
+  {"id": "o2-7d", "text": "Cela dépend du service", "isCorrect": false, "order": 4, "questionId": "q2-7"},
+
+  {"id": "o3-1a", "text": "Il n'a aucune valeur juridique", "isCorrect": false, "order": 1, "questionId": "q3-1"},
+  {"id": "o3-1b", "text": "Il fait foi jusqu'à preuve du contraire", "isCorrect": true, "order": 2, "questionId": "q3-1"},
+  {"id": "o3-1c", "text": "Il a la même valeur qu'un compte-rendu", "isCorrect": false, "order": 3, "questionId": "q3-1"},
+  {"id": "o3-1d", "text": "Il a une valeur consultative uniquement", "isCorrect": false, "order": 4, "questionId": "q3-1"},
+
+  {"id": "o3-2a", "text": "L'auteur seul", "isCorrect": false, "order": 1, "questionId": "q3-2"},
+  {"id": "o3-2b", "text": "Le président et le secrétaire de séance", "isCorrect": true, "order": 2, "questionId": "q3-2"},
+  {"id": "o3-2c", "text": "Tous les participants", "isCorrect": false, "order": 3, "questionId": "q3-2"},
+  {"id": "o3-2d", "text": "Le directeur uniquement", "isCorrect": false, "order": 4, "questionId": "q3-2"},
+
+  {"id": "o3-3a", "text": "Le PV est plus court", "isCorrect": false, "order": 1, "questionId": "q3-3"},
+  {"id": "o3-3b", "text": "Le PV a une valeur juridique contraignante, le CR est informatif", "isCorrect": true, "order": 2, "questionId": "q3-3"},
+  {"id": "o3-3c", "text": "Le CR est plus formel que le PV", "isCorrect": false, "order": 3, "questionId": "q3-3"},
+  {"id": "o3-3d", "text": "Il n'y a pas de différence significative", "isCorrect": false, "order": 4, "questionId": "q3-3"},
+
+  {"id": "o3-4a", "text": "L'introduction", "isCorrect": false, "order": 1, "questionId": "q3-4"},
+  {"id": "o3-4b", "text": "L'exposé des faits", "isCorrect": false, "order": 2, "questionId": "q3-4"},
+  {"id": "o3-4c", "text": "L'analyse et commentaires", "isCorrect": false, "order": 3, "questionId": "q3-4"},
+  {"id": "o3-4d", "text": "Propositions / Conclusion", "isCorrect": true, "order": 4, "questionId": "q3-4"},
+
+  {"id": "o3-5a", "text": "Le rapport contient une analyse personnelle et des propositions d'action", "isCorrect": true, "order": 1, "questionId": "q3-5"},
+  {"id": "o3-5b", "text": "Le rapport est plus court que le compte-rendu", "isCorrect": false, "order": 2, "questionId": "q3-5"},
+  {"id": "o3-5c", "text": "Le compte-rendu contient des propositions, pas le rapport", "isCorrect": false, "order": 3, "questionId": "q3-5"},
+  {"id": "o3-5d", "text": "Ils sont identiques", "isCorrect": false, "order": 4, "questionId": "q3-5"},
+
+  {"id": "o3-6a", "text": "Un document interne long et détaillé", "isCorrect": false, "order": 1, "questionId": "q3-6"},
+  {"id": "o3-6b", "text": "Un texte court et percutant diffusé par une autorité pour informer le public", "isCorrect": true, "order": 2, "questionId": "q3-6"},
+  {"id": "o3-6c", "text": "Un rapport de mission destiné à la hiérarchie", "isCorrect": false, "order": 3, "questionId": "q3-6"},
+  {"id": "o3-6d", "text": "Un acte juridique fondamental d'une société", "isCorrect": false, "order": 4, "questionId": "q3-6"},
+
+  {"id": "o3-7a", "text": "Les règles de politesse dans l'administration", "isCorrect": false, "order": 1, "questionId": "q3-7"},
+  {"id": "o3-7b", "text": "Les procédures de recrutement uniquement", "isCorrect": false, "order": 2, "questionId": "q3-7"},
+  {"id": "o3-7c", "text": "« Qui fait quoi, comment, où, quand et selon quelles normes » pour chaque activité", "isCorrect": true, "order": 3, "questionId": "q3-7"},
+  {"id": "o3-7d", "text": "La liste des employés et leurs fonctions", "isCorrect": false, "order": 4, "questionId": "q3-7"}
+]

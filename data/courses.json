@@ -1,0 +1,29 @@
+[
+  {
+    "id": "course-admin-1",
+    "title": "Rédaction et Style Administratif",
+    "description": "Formation complète sur les techniques de rédaction administrative : le style et la phrase administrative, les correspondances et documents administratifs, ainsi que les documents administratifs spéciaux (PV, rapports, communiqués, etc.).",
+    "userId": "teacher-default",
+    "createdAt": "2026-01-15T08:00:00.000Z",
+    "modules": [
+      {
+        "id": "mod-1",
+        "title": "Module 1 : Le Style et la Phrase Administrative",
+        "order": 1,
+        "units": ["res-u11", "res-u12"]
+      },
+      {
+        "id": "mod-2",
+        "title": "Module 2 : Correspondances et Documents Administratifs",
+        "order": 2,
+        "units": ["res-u21", "res-u22"]
+      },
+      {
+        "id": "mod-3",
+        "title": "Module 3 : Les Documents Administratifs Autres que les Correspondances",
+        "order": 3,
+        "units": ["res-u31", "res-u32", "res-u33"]
+      }
+    ]
+  }
+]

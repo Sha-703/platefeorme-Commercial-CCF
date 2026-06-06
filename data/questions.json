@@ -1,0 +1,149 @@
+[
+  {
+    "id": "q1-1",
+    "text": "Quelle qualité du style administratif interdit l'expression des sentiments personnels ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 1,
+    "quizId": "quiz-mod1"
+  },
+  {
+    "id": "q1-2",
+    "text": "Pourquoi le pronom indéfini « ON » est-il interdit dans la rédaction administrative ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 2,
+    "quizId": "quiz-mod1"
+  },
+  {
+    "id": "q1-3",
+    "text": "Quelle est la formulation administrative correcte pour refuser une demande ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 3,
+    "quizId": "quiz-mod1"
+  },
+  {
+    "id": "q1-4",
+    "text": "Transformez la phrase suivante en style administratif correct : « On a constaté que les agents arrivent en retard. »",
+    "type": "MULTIPLE_CHOICE",
+    "order": 4,
+    "quizId": "quiz-mod1"
+  },
+  {
+    "id": "q1-5",
+    "text": "Quel mode verbal est utilisé dans le style administratif pour marquer la déférence envers un supérieur ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 5,
+    "quizId": "quiz-mod1"
+  },
+  {
+    "id": "q1-6",
+    "text": "Quel est le schéma logique de base de la phrase administrative ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 6,
+    "quizId": "quiz-mod1"
+  },
+  {
+    "id": "q1-7",
+    "text": "Quelle locution administrative correspond à « Je vous dis que... » ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 7,
+    "quizId": "quiz-mod1"
+  },
+  {
+    "id": "q2-1",
+    "text": "Où se place le Timbre sur une lettre administrative ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 1,
+    "quizId": "quiz-mod2"
+  },
+  {
+    "id": "q2-2",
+    "text": "Que contient la Vedette dans une lettre de service ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 2,
+    "quizId": "quiz-mod2"
+  },
+  {
+    "id": "q2-3",
+    "text": "Quelles sont les trois parties du corps d'une lettre administrative ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 3,
+    "quizId": "quiz-mod2"
+  },
+  {
+    "id": "q2-4",
+    "text": "Quelle est la différence principale entre une note de service et une lettre de service ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 4,
+    "quizId": "quiz-mod2"
+  },
+  {
+    "id": "q2-5",
+    "text": "Quel est l'objet du Soit-Transmis ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 5,
+    "quizId": "quiz-mod2"
+  },
+  {
+    "id": "q2-6",
+    "text": "Laquelle de ces mentions peut accompagner un Soit-Transmis ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 6,
+    "quizId": "quiz-mod2"
+  },
+  {
+    "id": "q2-7",
+    "text": "La note de service comporte-t-elle une formule de politesse finale ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 7,
+    "quizId": "quiz-mod2"
+  },
+  {
+    "id": "q3-1",
+    "text": "Quelle est la valeur juridique du Procès-Verbal ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 1,
+    "quizId": "quiz-mod3"
+  },
+  {
+    "id": "q3-2",
+    "text": "Qui signe conjointement un Procès-Verbal ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 2,
+    "quizId": "quiz-mod3"
+  },
+  {
+    "id": "q3-3",
+    "text": "Quelle est la différence principale entre un Procès-Verbal et un Compte-Rendu ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 3,
+    "quizId": "quiz-mod3"
+  },
+  {
+    "id": "q3-4",
+    "text": "Quelle partie du rapport contient les recommandations soumises au décideur ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 4,
+    "quizId": "quiz-mod3"
+  },
+  {
+    "id": "q3-5",
+    "text": "Qu'est-ce qui distingue le rapport du compte-rendu ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 5,
+    "quizId": "quiz-mod3"
+  },
+  {
+    "id": "q3-6",
+    "text": "Qu'est-ce qu'un communiqué ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 6,
+    "quizId": "quiz-mod3"
+  },
+  {
+    "id": "q3-7",
+    "text": "Que décrit principalement le Manuel des Procédures ?",
+    "type": "MULTIPLE_CHOICE",
+    "order": 7,
+    "quizId": "quiz-mod3"
+  }
+]

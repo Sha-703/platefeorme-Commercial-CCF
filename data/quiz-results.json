@@ -1,0 +1,186 @@
+[
+  {
+    "id": "1780760634341",
+    "submittedAt": "2026-06-06T15:43:54.341Z",
+    "studentId": "1780759278896",
+    "quizId": "quiz-mod1",
+    "score": 28.57142857142857,
+    "answers": {
+      "create": [
+        {
+          "questionId": "q1-1",
+          "answer": "La courtoisie",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q1-2",
+          "answer": "Parce qu'il est trop familier",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q1-3",
+          "answer": "« Votre demande est rejetée. »",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q1-4",
+          "answer": "« Il a été constaté que les agents arrivent en retard. »",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q1-5",
+          "answer": "Le subjonctif",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q1-6",
+          "answer": "Sujet + Verbe + Complément",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q1-7",
+          "answer": "« Je vous annonce que... »",
+          "isCorrect": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "1780762391325",
+    "submittedAt": "2026-06-06T16:13:11.325Z",
+    "studentId": "1780759278896",
+    "quizId": "quiz-mod2",
+    "score": 57.14285714285714,
+    "answers": {
+      "create": [
+        {
+          "questionId": "q2-1",
+          "answer": "En bas à droite",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q2-2",
+          "answer": "L'appellation de l'auteur et l'adresse du destinataire exprimant la hiérarchie",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q2-3",
+          "answer": "Introduction, Développement, Conclusion",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q2-4",
+          "answer": "La note a une valeur juridique supérieure",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q2-5",
+          "answer": "Faire circuler une pièce ou un dossier le long de la ligne hiérarchique",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q2-6",
+          "answer": "« Pour attribution »",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q2-7",
+          "answer": "Oui, mais seulement pour les supérieurs",
+          "isCorrect": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "1780762494503",
+    "submittedAt": "2026-06-06T16:14:54.503Z",
+    "studentId": "1780759278896",
+    "quizId": "quiz-mod2",
+    "score": 42.857142857142854,
+    "answers": {
+      "create": [
+        {
+          "questionId": "q2-1",
+          "answer": "Au centre",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q2-2",
+          "answer": "L'appellation de l'auteur et l'adresse du destinataire exprimant la hiérarchie",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q2-3",
+          "answer": "Introduction, Développement, Conclusion",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q2-4",
+          "answer": "La lettre de service est plus courte",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q2-5",
+          "answer": "Faire circuler une pièce ou un dossier le long de la ligne hiérarchique",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q2-6",
+          "answer": "« Pour archivage définitif »",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q2-7",
+          "answer": "Oui, mais seulement pour les supérieurs",
+          "isCorrect": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "1780762544545",
+    "submittedAt": "2026-06-06T16:15:44.545Z",
+    "studentId": "1780759278896",
+    "quizId": "quiz-mod3",
+    "score": 42.857142857142854,
+    "answers": {
+      "create": [
+        {
+          "questionId": "q3-1",
+          "answer": "Il fait foi jusqu'à preuve du contraire",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q3-2",
+          "answer": "Le président et le secrétaire de séance",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q3-3",
+          "answer": "Le PV a une valeur juridique contraignante, le CR est informatif",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q3-4",
+          "answer": "L'exposé des faits",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q3-5",
+          "answer": "Le rapport est plus court que le compte-rendu",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q3-6",
+          "answer": "Un rapport de mission destiné à la hiérarchie",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q3-7",
+          "answer": "Les procédures de recrutement uniquement",
+          "isCorrect": false
+        }
+      ]
+    }
+  }
+]

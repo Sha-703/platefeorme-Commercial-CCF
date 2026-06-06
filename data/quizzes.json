@@ -1,0 +1,23 @@
+[
+  {
+    "id": "quiz-mod1",
+    "title": "Quiz Module 1 : Le Style et la Phrase Administrative",
+    "courseId": "course-admin-1",
+    "userId": "teacher-default",
+    "createdAt": "2026-01-15T09:00:00.000Z"
+  },
+  {
+    "id": "quiz-mod2",
+    "title": "Quiz Module 2 : Correspondances et Documents Administratifs",
+    "courseId": "course-admin-1",
+    "userId": "teacher-default",
+    "createdAt": "2026-01-15T09:00:00.000Z"
+  },
+  {
+    "id": "quiz-mod3",
+    "title": "Quiz Module 3 : Les Documents Administratifs Spéciaux",
+    "courseId": "course-admin-1",
+    "userId": "teacher-default",
+    "createdAt": "2026-01-15T09:00:00.000Z"
+  }
+]
