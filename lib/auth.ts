@@ -2,6 +2,12 @@ import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { prisma } from "@/lib/db";
 import bcrypt from "bcryptjs";
+import crypto from "crypto";
+
+// Generate a secret if not provided
+const generateSecret = () => {
+  return crypto.randomBytes(32).toString("hex");
+};
 
 // Augmentation des types next-auth v5 pour ajouter les champs personnalisés
 declare module "next-auth" {
@@ -21,6 +27,7 @@ declare module "next-auth" {
 }
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
+  secret: process.env.NEXTAUTH_SECRET || generateSecret(),
   trustHost: true,
   providers: [
     CredentialsProvider({
