@@ -18,12 +18,14 @@ export function LoginForm() {
       const result = await signIn("credentials", {
         email,
         password,
-        redirect: true,
-        callbackUrl: "/dashboard",
+        redirect: false,
       });
 
-      if (!result || !result.ok) {
+      if (!result?.ok) {
         setError(result?.error || "Email ou mot de passe incorrect");
+      } else {
+        // Redirect manually after successful login
+        window.location.href = "/dashboard";
       }
     } catch {
       setError("Erreur lors de la connexion");
