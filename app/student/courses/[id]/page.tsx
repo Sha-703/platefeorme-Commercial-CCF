@@ -31,7 +31,7 @@ interface Course {
   title: string;
   description?: string;
   modules?: CourseModule[];
-  resources: Array<{ resource: Resource }>;
+  resources: Array<Resource | { resource: Resource }>;
   quizzes: Quiz[];
   user: { name: string };
 }
