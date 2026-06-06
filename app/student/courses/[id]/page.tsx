@@ -78,7 +78,12 @@ export default function StudentCourseDetailPage() {
   function getAllResources(): Resource[] {
     if (!course) return [];
     return course.resources
-      .map((r) => r.resource || r)
+      .map((r) => {
+        if ('resource' in r) {
+          return r.resource;
+        }
+        return r;
+      })
       .filter(Boolean)
       .sort((a: any, b: any) => (a.order || 0) - (b.order || 0));
   }
