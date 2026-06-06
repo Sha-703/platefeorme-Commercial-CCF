@@ -59,29 +59,37 @@ export default function CoursesPage() {
   }
 
   if (status === "loading" || loading) {
-    return <div className="container py-8">Chargement...</div>;
+    return <div className="container py-6 sm:py-8">Chargement...</div>;
   }
 
   if (!session) return null;
 
   return (
-    <main className="container py-8">
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold">
+    <main className="container py-6 sm:py-8">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+        <h1 className="text-2xl sm:text-3xl font-bold">
           {isTeacher ? "Mes Cours" : "Cours Disponibles"}
         </h1>
         {isTeacher && (
           <button
             onClick={() => setShowForm(!showForm)}
-            className="btn-primary"
+            className="btn-primary text-xs sm:text-sm w-full sm:w-auto"
           >
             {showForm ? "Annuler" : "+ Créer Cours"}
           </button>
         )}
       </div>
 
-      {error && <div className="bg-red-50 text-red-600 p-3 rounded mb-4">{error}</div>}
-      {success && <div className="bg-green-50 text-green-600 p-3 rounded mb-4">{success}</div>}
+      {error && (
+        <div className="bg-red-50 text-red-600 p-3 sm:p-4 rounded mb-4 text-xs sm:text-sm">
+          {error}
+        </div>
+      )}
+      {success && (
+        <div className="bg-green-50 text-green-600 p-3 sm:p-4 rounded mb-4 text-xs sm:text-sm">
+          {success}
+        </div>
+      )}
 
       {showForm && isTeacher && (
         <CourseForm
@@ -93,42 +101,42 @@ export default function CoursesPage() {
         />
       )}
 
-      <div className="grid gap-6">
+      <div className="grid gap-3 sm:gap-4 lg:gap-6">
         {courses.length === 0 ? (
-          <div className="text-center py-8 text-gray-500">
+          <div className="text-center py-8 text-gray-500 text-sm sm:text-base">
             {isTeacher ? "Aucun cours. Créez-en un !" : "Aucun cours disponible"}
           </div>
         ) : (
           courses.map((course) => (
             <div
               key={course.id}
-              className="bg-slate-50 border border-slate-900 rounded-lg shadow p-6 hover:shadow-lg transition"
+              className="bg-slate-50 border border-slate-900 rounded-lg shadow p-3 sm:p-4 lg:p-6 hover:shadow-lg transition"
             >
-              <div className="flex justify-between items-start">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
+              <div className="flex flex-col sm:flex-row justify-between items-start gap-3 sm:gap-4">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl font-semibold mb-2 break-words">{course.title}</h3>
                   {course.description && (
-                    <p className="text-gray-600 mb-3">{course.description}</p>
+                    <p className="text-xs sm:text-sm text-gray-600 mb-3">{course.description}</p>
                   )}
-                  <div className="flex gap-6 text-sm text-gray-500">
-                    <span>📖 {course.resources.length} ressource(s)</span>
-                    <span>✅ {course.quizzes.length} test(s)</span>
-                    <span>Par {course.user.name}</span>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm text-gray-500">
+                    <span className="whitespace-nowrap">📖 {course.resources.length} ressource(s)</span>
+                    <span className="whitespace-nowrap">✅ {course.quizzes.length} test(s)</span>
+                    <span className="whitespace-nowrap">Par {course.user.name}</span>
                   </div>
                 </div>
                 {isTeacher && (
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 w-full sm:w-auto flex-shrink-0">
                     <button
                       onClick={() =>
                         router.push(`/teacher/courses/${course.id}`)
                       }
-                      className="bg-blue-900 hover:bg-blue-800 text-white px-3 py-1 rounded text-sm"
+                      className="bg-blue-900 hover:bg-blue-800 text-white px-2 sm:px-3 py-1 rounded text-xs sm:text-sm transition flex-1 sm:flex-none"
                     >
                       Gérer
                     </button>
                     <button
                       onClick={() => handleDelete(course.id)}
-                      className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm"
+                      className="bg-red-500 hover:bg-red-600 text-white px-2 sm:px-3 py-1 rounded text-xs sm:text-sm transition flex-1 sm:flex-none"
                     >
                       Supprimer
                     </button>
@@ -171,32 +179,36 @@ function CourseForm({ onSuccess }: { onSuccess: () => void }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-slate-50 border border-slate-900 rounded-lg shadow p-6 mb-6">
-      {error && <div className="bg-red-50 text-red-600 p-3 rounded mb-4">{error}</div>}
+    <form onSubmit={handleSubmit} className="bg-slate-50 border border-slate-900 rounded-lg shadow p-4 sm:p-6 mb-6">
+      {error && (
+        <div className="bg-red-50 text-red-600 p-3 sm:p-4 rounded mb-4 text-xs sm:text-sm">
+          {error}
+        </div>
+      )}
 
       <div className="mb-4">
-        <label className="block text-sm font-medium mb-1">Titre</label>
+        <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2">Titre</label>
         <input
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
-          className="w-full"
+          className="w-full text-sm sm:text-base"
           placeholder="Ex: Correspondance commerciale B1"
         />
       </div>
 
       <div className="mb-4">
-        <label className="block text-sm font-medium mb-1">Description</label>
+        <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2">Description</label>
         <textarea
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="w-full h-20"
+          className="w-full h-20 text-sm sm:text-base"
           placeholder="Description du cours..."
         />
       </div>
 
-      <button type="submit" disabled={loading} className="btn-primary">
+      <button type="submit" disabled={loading} className="btn-primary text-xs sm:text-sm">
         {loading ? "Création..." : "Créer Cours"}
       </button>
     </form>

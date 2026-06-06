@@ -8,6 +8,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 body {
   background-image: url('/images/school.jpg');
   background-size: cover;
@@ -20,6 +31,7 @@ body {
     sans-serif;
   line-height: 1.6;
   position: relative;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -52,12 +64,26 @@ body::after {
 
 main {
   min-height: 100vh;
+  width: 100%;
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
 
 button {
@@ -70,6 +96,13 @@ button {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 640px) {
+  button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
 .btn-primary {
   background-color: #1e40af;
   color: white;
@@ -77,6 +110,12 @@ button {
 
 .btn-primary:hover {
   background-color: #1e3a8a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
 }
 
 .btn-secondary {
@@ -86,17 +125,68 @@ button {
 
 .btn-secondary:hover {
   background-color: #d1d5db;
+  transform: translateY(-2px);
 }
 
 input, textarea, select {
-  padding: 8px 12px;
+  width: 100%;
+  padding: 10px 12px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
   font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 640px) {
+  input, textarea, select {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
 }
 
 input:focus, textarea:focus, select:focus {
   outline: none;
   border-color: #1e40af;
   box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+/* Utility Classes */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-area-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+/* Responsive Grid Utilities */
+.grid-responsive {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-responsive {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Smooth animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

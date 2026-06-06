@@ -43,16 +43,16 @@ export default function StudentDashboardPage() {
   }
 
   if (status === "loading" || loading) {
-    return <div className="container py-8">Chargement...</div>;
+    return <div className="container py-6 sm:py-8">Chargement...</div>;
   }
 
   if (!session || !data) return null;
 
   return (
-    <main className="container py-8">
-      <h1 className="text-3xl font-bold mb-8">Mon Apprentissage</h1>
+    <main className="container py-6 sm:py-8">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-8">Mon Apprentissage</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 mb-6 sm:mb-8">
         <StatCard
           icon="📚"
           title="Cours Suivis"
@@ -70,22 +70,22 @@ export default function StudentDashboardPage() {
         />
       </div>
 
-      <h2 className="text-2xl font-semibold mb-4">Résultats Récents</h2>
+      <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Résultats Récents</h2>
       {data.recentResults.length > 0 ? (
-        <div className="grid gap-3">
+        <div className="grid gap-2 sm:gap-3">
           {data.recentResults.slice(0, 5).map((result, idx) => (
             <div
               key={idx}
-              className="bg-slate-50 border border-slate-900 rounded-lg shadow p-4 flex justify-between items-center"
+              className="bg-slate-50 border border-slate-900 rounded-lg shadow p-3 sm:p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-4"
             >
-              <div>
-                <h3 className="font-semibold">{result.quiz.title}</h3>
+              <div className="flex-1">
+                <h3 className="font-semibold text-sm sm:text-base">{result.quiz.title}</h3>
                 <p className="text-xs text-gray-500">
                   {new Date(result.submittedAt).toLocaleDateString("fr-FR")}
                 </p>
               </div>
               <div
-                className={`text-2xl font-bold ${
+                className={`text-xl sm:text-2xl font-bold ${
                   result.score >= 50 ? "text-green-600" : "text-red-600"
                 }`}
               >
@@ -95,15 +95,15 @@ export default function StudentDashboardPage() {
           ))}
         </div>
       ) : (
-        <div className="bg-blue-50 text-blue-600 p-4 rounded">
+        <div className="bg-blue-50 text-blue-600 p-3 sm:p-4 rounded text-sm sm:text-base">
           Vous n'avez pas encore complété de tests. Commencez maintenant !
         </div>
       )}
 
-      <div className="mt-8">
+      <div className="mt-6 sm:mt-8">
         <button
           onClick={() => router.push("/student/quizzes")}
-          className="btn-primary"
+          className="btn-primary text-xs sm:text-sm"
         >
           Voir tous les tests →
         </button>
@@ -122,10 +122,10 @@ function StatCard({
   value: string;
 }) {
   return (
-    <div className="bg-slate-50 border border-slate-900 rounded-lg shadow p-6 text-center">
-      <div className="text-4xl mb-2">{icon}</div>
-      <p className="text-gray-600 mb-2">{title}</p>
-      <p className="text-3xl font-bold text-blue-600">{value}</p>
+    <div className="bg-slate-50 border border-slate-900 rounded-lg shadow p-3 sm:p-4 lg:p-6 text-center">
+      <div className="text-3xl sm:text-4xl mb-1 sm:mb-2">{icon}</div>
+      <p className="text-xs sm:text-sm text-gray-600 mb-1 sm:mb-2">{title}</p>
+      <p className="text-2xl sm:text-3xl font-bold text-blue-600">{value}</p>
     </div>
   );
 }

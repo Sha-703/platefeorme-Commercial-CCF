@@ -47,16 +47,16 @@ export default function TeacherDashboardPage() {
   }
 
   if (status === "loading" || loading) {
-    return <div className="container py-8">Chargement...</div>;
+    return <div className="container py-6 sm:py-8">Chargement...</div>;
   }
 
   if (!session || !data) return null;
 
   return (
-    <main className="container py-8">
-      <h1 className="text-3xl font-bold mb-8">Tableau de Bord Enseignant</h1>
+    <main className="container py-6 sm:py-8">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-8">Tableau de Bord Enseignant</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 lg:gap-6 mb-6 sm:mb-8">
         <StatCard icon="📚" title="Cours" value={data.courses.toString()} />
         <StatCard icon="✅" title="Tests" value={data.quizzes.toString()} />
         <StatCard
@@ -71,7 +71,7 @@ export default function TeacherDashboardPage() {
         />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 mb-6 sm:mb-8">
         <ActionCard
           title="Créer un Cours"
           description="Créer un nouveau cours"
@@ -100,22 +100,22 @@ export default function TeacherDashboardPage() {
 
       {data.courseDetails.length > 0 && (
         <>
-          <h2 className="text-2xl font-semibold mb-4">Vue par Cours</h2>
-          <div className="grid gap-3">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Vue par Cours</h2>
+          <div className="grid gap-2 sm:gap-3">
             {data.courseDetails.map((course) => (
               <div
                 key={course.id}
-                className="bg-slate-50 border border-slate-900 rounded-lg shadow p-4 flex justify-between items-center hover:shadow-lg transition cursor-pointer"
+                className="bg-slate-50 border border-slate-900 rounded-lg shadow p-3 sm:p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-4 hover:shadow-lg transition cursor-pointer"
                 onClick={() => router.push(`/teacher/courses/${course.id}`)}
               >
-                <div>
-                  <h3 className="font-semibold">{course.title}</h3>
-                  <p className="text-sm text-gray-600">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-sm sm:text-base">{course.title}</h3>
+                  <p className="text-xs sm:text-sm text-gray-600">
                     {course.quizzes} test(s) · {course.submissions} soumission(s)
                   </p>
                 </div>
-                <div className="text-right">
-                  <div className="text-lg font-bold text-blue-600">
+                <div className="text-right flex-shrink-0">
+                  <div className="text-lg sm:text-xl font-bold text-blue-600">
                     {course.submissions}
                   </div>
                   <div className="text-xs text-gray-500">soumises</div>
@@ -139,10 +139,10 @@ function StatCard({
   value: string;
 }) {
   return (
-    <div className="bg-slate-50 border border-slate-900 rounded-lg shadow p-6 text-center">
-      <div className="text-4xl mb-2">{icon}</div>
-      <p className="text-gray-600 text-sm mb-2">{title}</p>
-      <p className="text-3xl font-bold text-blue-600">{value}</p>
+    <div className="bg-slate-50 border border-slate-900 rounded-lg shadow p-3 sm:p-4 lg:p-6 text-center">
+      <div className="text-2xl sm:text-3xl lg:text-4xl mb-1 sm:mb-2">{icon}</div>
+      <p className="text-xs sm:text-sm text-gray-600 mb-1 sm:mb-2">{title}</p>
+      <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-600">{value}</p>
     </div>
   );
 }
@@ -161,11 +161,11 @@ function ActionCard({
   return (
     <div
       onClick={onClick}
-      className="bg-slate-50 border border-slate-900 rounded-lg shadow p-6 hover:shadow-lg transition cursor-pointer"
+      className="bg-slate-50 border border-slate-900 rounded-lg shadow p-3 sm:p-4 lg:p-6 hover:shadow-lg transition cursor-pointer"
     >
-      <div className="text-3xl mb-2">{icon}</div>
-      <h3 className="font-semibold">{title}</h3>
-      <p className="text-sm text-gray-600">{description}</p>
+      <div className="text-2xl sm:text-3xl mb-1 sm:mb-2">{icon}</div>
+      <h3 className="font-semibold text-sm sm:text-base">{title}</h3>
+      <p className="text-xs sm:text-sm text-gray-600">{description}</p>
     </div>
   );
 }
